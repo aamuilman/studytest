@@ -24,4 +24,19 @@ public class MainClassTest extends MainClass
          System.out.println("not equal to 45");
      }
     }
+    @Test
+    public void testGetClassString() {
+        String a44 = "Hello";
+        String a45 = "hello";
+        String a46 = this.getClassString();
+        boolean res1 = a46.contains(a44);
+        boolean res2 = a46.contains(a45);
+        //System.out.println(res1);
+        if (res1 == true || res2 == true){
+            System.out.println(getClassString());
+        }
+        else {
+            System.out.println("no search words");
+        }
+    }
 }
